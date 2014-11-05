@@ -20,12 +20,12 @@ define(function(require, exports, module) {
 
         var iphoneSizeModifier = new Modifier(
             {
-                size: [320,568]
+                size: [320,504]
             });
 
         var layout = new HeaderFooterLayout({
-            headerSize: 80,
-            footerSize: 180
+            headerSize: 50,
+            footerSize: 140
         });
 
         var headerView = new HeaderView();        

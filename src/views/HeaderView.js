@@ -15,7 +15,7 @@ define(function(require, exports, module) {
 
 
         var background = new Surface({
-            size: [undefined,80],
+            size: [undefined,50],
             properties: {
                 backgroundColor: '#EC5347',
                 zIndex: 2
@@ -23,25 +23,24 @@ define(function(require, exports, module) {
         })
 
         var leftButton = new Surface({
-            size: [40,40],
+            size: [35,35],
             content: '<span class="glyphicon glyphicon-cog"></span>',
             properties: {
-                border: '2px solid #eee',
                 color: '#eee',
-                borderRadius: '40px',
+                borderRadius: '35px',
+                zIndex: 3,
                 textAlign: 'center',
-                lineHeight: '40px',
-                fontSize: '20px',
-                zIndex: 3
+                lineHeight: '35px',
+                fontSize: '20px'
             }
         })
 
         var title = new Surface({
-            content: "Famouser",
+            content: "famouser",
             size: [undefined,undefined],
             properties: {
                 textAlign: 'center',
-                lineHeight: '60px',
+                lineHeight: '50px',
                 fontSize: '40px',
                 fontWeight: '100',
                 color: '#eee',
@@ -50,15 +49,14 @@ define(function(require, exports, module) {
         })
 
         var rightButton = new Surface({
-            size: [40,40],
+            size: [35,35],
             content: '<span class="glyphicon glyphicon-comment"></span>',
             properties: {
-                border: '2px solid #eee',
                 color: '#eee',
-                borderRadius: '40px',
+                borderRadius: '35px',
                 zIndex: 3,
                 textAlign: 'center',
-                lineHeight: '40px',
+                lineHeight: '35px',
                 fontSize: '20px'
             }
         })
@@ -76,26 +74,26 @@ define(function(require, exports, module) {
         })
 
         var titleModifier = new StateModifier({
-            transform: Transform.translate(0, 10, 0)
+            transform: Transform.translate(0, 0, 0)
         })
 
         var leftButtonModifier = new StateModifier({
-            transform: Transform.translate(10, 30, 0)
+            transform: Transform.translate(7, 15, 0)
         })
 
         var rightButtonModifier = new StateModifier({
-            transform: Transform.translate(266, 30, 0)
+            transform: Transform.translate(278, 15, 0)
         })
 
         var rightButtonNewModifier = new StateModifier({
-            transform: Transform.translate(281, 42, 0)
+            transform: Transform.translate(291, 24, 0)
         })
 
         leftButton.on('tap', function(){
             console.log('left');
             toggleFullScreen();
         })
-        
+
         leftButton.on('click', function(){
             console.log('left');
             toggleFullScreen();

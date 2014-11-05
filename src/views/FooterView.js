@@ -14,7 +14,7 @@ define(function(require, exports, module) {
         View.apply(this, arguments);
 
         var background = new Surface({
-            size: [undefined,180],
+            size: [undefined,140],
             properties: {
                 backgroundColor: '#222',
                 zIndex: 2
@@ -67,15 +67,15 @@ define(function(require, exports, module) {
         })
 
         var dislikeButtonModifier = new StateModifier({
-            transform: Transform.translate(220, 100, 0)
+            transform: Transform.translate(230, 60, 0)
         })
 
         var infoButtonModifier = new StateModifier({
-            transform: Transform.translate(100, 60, 0)
+            transform: Transform.translate(110, 20, 0)
         })
 
         var likeButtonModifier = new StateModifier({
-            transform: Transform.translate(20, 100, 0)
+            transform: Transform.translate(30, 60, 0)
         })
 
         likeButton.on('click', function(){
